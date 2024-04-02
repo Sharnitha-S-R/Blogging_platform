@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Feed</title>
+</head>
+<body>
+    <h1>User Feed</h1>
+    <ul>
+        {% for post in feed_posts %}
+            <li>Title: {{ post.title }}</li>
+            <li>Content: {{ post.content }}</li>
+            <hr>
+        {% endfor %}
+    </ul>
+</body>
+</html>
